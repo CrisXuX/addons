@@ -1,4 +1,4 @@
-{
+{ 
     "js": [
         "js/main.js",
         "../../../lib/externals/openlayers/lib/OpenLayers/Marker.js",
@@ -9,6 +9,9 @@
     "css": [
         "css/main.css"
     ],
+    "default_options": {
+        "urlHelp": "http://geo.gob.bo/?-Ayuda-45-"
+    },
     "i18n": { 
         "en": {
             "title_window":     "Insert coordinates",
@@ -87,4 +90,4 @@
         }
     }
 }
-
+    

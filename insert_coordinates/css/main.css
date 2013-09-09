@@ -2,6 +2,10 @@
     background-image: url(../img/icon.png) !important; 
 }
 
+.help-icon { 
+    background-image: url(../img/help.png) !important; 
+}
+
 .delete-icon { 
     background-image: url(../img/delete.gif) !important; 
 }
