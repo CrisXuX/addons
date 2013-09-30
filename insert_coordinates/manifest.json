@@ -9,6 +9,9 @@
     "css": [
         "css/main.css"
     ],
+    "default_options": {
+        "urlHelp": "http://geo.gob.bo/?-Ayuda-45-"
+    },
     "i18n": { 
         "en": {
             "title_window":     "Insert coordinates",
