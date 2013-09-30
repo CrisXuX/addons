@@ -108,7 +108,13 @@ GEOR.Addons.Insert_Coordinates.prototype = {
                 closable: true,
                 closeAction: 'hide',
                 buttonAlign: 'left',
-                fbar: ['->',{
+                fbar: [{
+                        iconCls:'help-icon',
+                        scope: this,
+                        handler : function() {
+                            window.open(this.options.urlHelp);
+                        }
+                        },'->',{
                         xtype: 'label',
                         html: "<pre><b>Datum: WGS 84</b></pre>"
                         }]
@@ -727,7 +733,7 @@ GEOR.Addons.Insert_Coordinates.prototype = {
                         }
                     }]
         });
-        popup.setVisible(true);
+        popup.setVisible(false);
         arrPopups.push(popup)
         
         // Event that performs the action of displaying the Popup for your marker
