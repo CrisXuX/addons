@@ -1,4 +1,4 @@
-/* 
+/*  
  * Copyright (c) 2013 by GeoBolivia 
  * Author: Cristhian Ariel Choque <cristhian_ach@yahoo.es, crisxux@gmail.com, cchoque@geo.gob.bo> 
  */
@@ -26,7 +26,7 @@ GEOR.Addons.Insert_Coordinates.prototype = {
     pointer: 0,
     area: 19,
     layer:null,
-    
+     
     
     //Values ​​that will allow validating text fields
     values: {
@@ -699,9 +699,9 @@ GEOR.Addons.Insert_Coordinates.prototype = {
         var LonLat = new OpenLayers.LonLat(x, y).transform(new OpenLayers.Projection("EPSG:4326"), new OpenLayers.Projection(mapi.getProjection()))
         mapi.setCenter(LonLat,mapi.getZoom);
 
-        var icon_marker = new OpenLayers.Icon(this.vecimage[this.pointer],tamanio,offset);
+        var iconMarker = new OpenLayers.Icon(this.vecimage[this.pointer],tamanio,offset);
 
-        var marker = new OpenLayers.Marker(LonLat, icon_marker);
+        var marker = new OpenLayers.Marker(LonLat, iconMarker);
                 
         marker.PlanID = text;      
 
@@ -712,6 +712,7 @@ GEOR.Addons.Insert_Coordinates.prototype = {
             map: mapi,
             draggable: false,
             closable: true,
+
             closeAction: 'hide',
             unpinnable:false,
             layout:'auto',
@@ -861,4 +862,3 @@ GEOR.Addons.Insert_Coordinates.prototype = {
         this.map = null;
     }
 };
-
